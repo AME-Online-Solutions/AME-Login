@@ -26,6 +26,15 @@
     position: absolute;
 }
   
+// **************************  spin image   *************************
+.spinimage {
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 .rotateimage{
   -webkit-animation: rotation 7s infinite linear;
 }
@@ -52,9 +61,10 @@
 <iframe allowtransparency="true" width="100%" height="1000" seamless frameborder="0" scrolling="yes" padding="0" src="https://script.google.com/macros/s/AKfycbxvvIf3tPs7d9oBRxHJu4qHYptCD3GK0qsnywKVkHAjx6_J02mZ/exec">
   <p>Your browser does not support iframes.</p>
 </iframe>
-<div id="loadingMessage">Loading...
+<div id="loadingMessage">
   <img class='rotateimage' src="https://sites.google.com/site/vmkale/AMELogo.jpg" alt='' align='left' style=float:center;width:150px;height:150px;border-radius:18px;border:1px solid #fff;display: block;>
-</div>
+  <div>Loading...</div>
+  </div>
 <script>
 $("#loadingMessage").delay(5000).hide(0);
   </script>
