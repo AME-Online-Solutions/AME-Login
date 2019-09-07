@@ -25,6 +25,24 @@
     left: 0px;
     position: absolute;
 }
+  
+.rotateimage{
+  -webkit-animation: rotation 7s infinite linear;
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    transform: rotateY(90deg);	
+  }
+  to {
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);	
+  }
+}
 
 
 </style>
@@ -35,7 +53,7 @@
   <p>Your browser does not support iframes.</p>
 </iframe>
 <div id="loadingMessage">Loading...
-  <img class='rotateimage' src="https://sites.google.com/site/vmkale/AMELogo.jpg" alt='' style=float:center;width:150px;height:150px;border-radius:18px;border:1px solid #fff;display: block;>
+  <img class='rotateimage' src="https://sites.google.com/site/vmkale/AMELogo.jpg" alt='' align='left' style=float:center;width:150px;height:150px;border-radius:18px;border:1px solid #fff;display: block;>
 </div>
 <script>
 $("#loadingMessage").delay(5000).hide(0);
