@@ -16,6 +16,14 @@
       margin:0px;
       background-color:#FEF5E7;
   }
+#loadingMessage {
+    width: 100%;
+    height: 100px;
+    background: #FEF5E7;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
 
 
 </style>
@@ -25,6 +33,10 @@
 <iframe allowtransparency="true" width="100%" height="1000" seamless frameborder="0" scrolling="yes" padding="0" src="https://script.google.com/macros/s/AKfycbxvvIf3tPs7d9oBRxHJu4qHYptCD3GK0qsnywKVkHAjx6_J02mZ/exec">
   <p>Your browser does not support iframes.</p>
 </iframe>
+<div id="loadingMessage">Loading...</div>
+<script>
+$("#loadingMessage").delay(5000).hide(0);
+  </script>
   <br>
 <div class="footer">
   <div style="font-family: Arial Black, Arial Bold, Gadget, sans-serif;">
