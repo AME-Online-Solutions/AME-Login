@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AME Login</title>
 <link rel="icon" href="https://sites.google.com/site/ameonlinesolutions/favicon.ico" type="image/icon type">
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -16,8 +17,7 @@
       padding: 0px;
       margin:0px;
       background-color:#FEF5E7;
-      width:100%;
- }
+  }
 #loadingMessage {
     width: 100%;
     height: 1000px;
@@ -26,7 +26,7 @@
     left: 0px;
     position: absolute;
 }
-  
+ 
 // **************************  spin image   *************************
 .spinimage {
   -webkit-animation:spin 4s linear infinite;
@@ -37,6 +37,7 @@
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 .rotateimage{
+  display:block;
   -webkit-animation: rotation 7s infinite linear;
 }
 @-webkit-keyframes rotation {
@@ -54,32 +55,31 @@
   }
 }
 
+
 </style>
 </head>
 <body>
-<!-- <iframe src="https://script.google.com/macros/s/AKfycbxvvIf3tPs7d9oBRxHJu4qHYptCD3GK0qsnywKVkHAjx6_J02mZ/exec" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%">
--->  
-<iframe width="100%" height="1000px" seamless frameborder="0" scrolling="yes" padding="0" src="https://script.google.com/macros/s/AKfycbxvvIf3tPs7d9oBRxHJu4qHYptCD3GK0qsnywKVkHAjx6_J02mZ/exec">
-<p>Your browser does not support iframes.</p>
-</iframe><div class="container">
-<div id="loadingMessage">
-  <img class='rotateimage' src="AMELogo.jpg" alt='' align='left' style='float: none;width:25%; margin-left: 60px;border-radius:18px;border:1px solid #fff;display: block;'>
-  <div><br>Loading...<br><br>
+
+<iframe allowtransparency="true" width="100%" height="1000" seamless frameborder="0" scrolling="yes" padding="0" src="https://script.google.com/macros/s/AKfycbxvvIf3tPs7d9oBRxHJu4qHYptCD3GK0qsnywKVkHAjx6_J02mZ/exec">
+  <p>Error Occured.</p>
+</iframe>
+<div id="loadingMessage" align=center>
+  <img class='rotateimage'  src="https://sites.google.com/site/vmkale/AMELogo.jpg" alt='' align='center' style="display: table;float:center;width:150px;height:150px;border-radius:18px;border:1px solid #fff;">
+  <BR><div ><img src="Loader.gif"alt='' align='center' style="display: table;float:center;width:100px;height:100px;border-radius:18px;border:1px solid #fff;"></div>
+  <BR>
+  <div class="footer">
     <div style="font-family: Arial Black, Arial Bold, Gadget, sans-serif;">
-    <font style="font-size:20px;color:rgb(0,0,0);">Developed by </font><font style="font-size:24px;color:rgb(0,0,0);">AME Online Solutions
-    <br>Email: info@</font><font style="font-size:24px;color:rgb(14,175,193);">ame</font><font style="font-size:24px;color:rgb(245,176,65);">online</font><font style="font-size:24px;color:rgb(51,72,103);">solutions.</font><font style="font-size:24px;color:rgb(0,0,255);">com</font><font style="font-size:20px;color:rgb(0,0,255);">
-    <br>(Whatsapp- 9923663834)</font></div>
+      <font style="font-size:20px;color:rgb(0,0,0);">Developed by </font>
+      <font style="font-size:24px;color:rgb(0,0,0);">
+        AME Online Solutions
+        <br>Email: info@</font><font style="font-size:24px;color:rgb(14,175,193);">ame</font><font style="font-size:24px;color:rgb(245,176,65);">online</font><font style="font-size:24px;color:rgb(51,72,103);">solutions.</font><font style="font-size:24px;color:rgb(0,0,255);">com</font><font style="font-size:20px;color:rgb(0,0,255);">
+        <br>(Whatsapp- 9923663834)
+      </font>
+    </div>
   </div>
-</div>
+ </div>
 <script>
-$("#loadingMessage").delay(6000).hide(0);
-  </script>
-  <br>
-<div class="footer">
-  <div style="font-family: Arial Black, Arial Bold, Gadget, sans-serif;">
-<font style="font-size:20px;color:rgb(0,0,0);">Developed by </font><font style="font-size:24px;color:rgb(0,0,0);">AME Online Solutions
-<br>Email: info@</font><font style="font-size:24px;color:rgb(14,175,193);">ame</font><font style="font-size:24px;color:rgb(245,176,65);">online</font><font style="font-size:24px;color:rgb(51,72,103);">solutions.</font><font style="font-size:24px;color:rgb(0,0,255);">com</font><font style="font-size:20px;color:rgb(0,0,255);">
-<br>(Whatsapp- 9923663834)</font></div>
-  </div>
+  $("#loadingMessage").delay(5500).hide(0);
+</script>
 </body>
 </html>
