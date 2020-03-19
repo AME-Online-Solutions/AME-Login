@@ -25,6 +25,13 @@
     top: 0px;
     left: 0px;
     position: absolute;
+  background:
+  radial-gradient(white 15%, transparent 16%) 0 0,
+  radial-gradient(#b47800 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#FEF5E7;
+  background-size:5px 5px;
 }
  
 // **************************  spin image   *************************
@@ -54,20 +61,30 @@
     transform: rotateY(-90deg);	
   }
 }
+.BackgroundPattern{
+  color:black;
+  background:
+  radial-gradient(white 15%, transparent 16%) 0 0,
+  radial-gradient(#b47800 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#FEF5E7;
+  background-size:5px 5px;
+}
 
 
 </style>
 </head>
-<body>
+<body class=BackgroundPattern>
 
 <iframe id=myiframe allowtransparency="true" width="100%" height="1000" seamless frameborder="0" scrolling="yes" padding="0" src="https://script.google.com/a/macros/ameonlinesolutions.com/s/AKfycbzVLMaAMTO7ujEI20E9uTJO4TkaPGCNrQA-a-qJQ6smdgMqqyc/exec">
   <p>Error Occured.</p>
 </iframe>
 <script>if(document.URL.split("?")[1]!=null){document.getElementById('myiframe').src = document.getElementById('myiframe').src+"?"+document.URL.split("?")[1];}</script>
 
-<div id="loadingMessage" align=center>
-  <img class='rotateimage'  src="https://sites.google.com/site/vmkale/AMELogo.jpg" alt='' align='center' style="display: table;float:center;width:150px;height:150px;border-radius:18px;border:1px solid #fff;">
-  <BR><div ><img src="Loader.gif"alt='' align='center' style="display: table;float:center;width:100px;height:100px;border-radius:18px;border:1px solid #fff;"></div>
+<div id="loadingMessage" align=center >
+  <img class='rotateimage'  src="https://sites.google.com/site/vmkale/AMELogo.jpg" alt='' align='center' style="float:center;width:150px;height:150px;border-radius:18px;border:0px solid #fff;" class=BackgroundPattern >
+  <BR><div ><i class="fa fa-spinner fa-spin" style="color:green;font-size:70px;"></i></div>
   <BR>
     <div style="font-family: Arial Black, Arial Bold, Gadget, sans-serif;">
       <font style="font-size:20px;color:rgb(0,0,0);">Developed by<br></font>
