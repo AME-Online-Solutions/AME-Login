@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AME Login</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
+<link rel="icon" href="https://sites.google.com/site/ameonlinesolutions/favicon.ico" type="image/icon type">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<style>
+  .footer {
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     color: white;
+  }
+
+  body {
+      padding: 0px;
+      margin:0px;
+      background-color:#FEF5E7;
+  }
+#loadingMessage {
+    width: 100%;
+    height: 1000px;
+    background: #FEF5E7;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+  background:
+  radial-gradient(white 15%, transparent 16%) 0 0,
+  radial-gradient(#b47800 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#FEF5E7;
+  background-size:5px 5px;
+}
+ 
+// **************************  spin image   *************************
+.spinimage {
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+.rotateimage{
+  display:block;
+  -webkit-animation: rotation 7s infinite linear;
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    transform: rotateY(90deg);	
+  }
+  to {
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);	
+  }
+}
+.BackgroundPattern{
+  color:black;
+  background:
+  radial-gradient(white 15%, transparent 16%) 0 0,
+  radial-gradient(#b47800 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#FEF5E7;
+  background-size:5px 5px;
+}
+
+</style>
+</head>
+<body class=BackgroundPattern  >
+
+<iframe id=myiframe allowtransparency="true" width="100%" height="1000" seamless frameborder="0" scrolling="yes" padding="0" src="https://script.google.com/a/macros/ameonlinesolutions.com/s/AKfycbzVLMaAMTO7ujEI20E9uTJO4TkaPGCNrQA-a-qJQ6smdgMqqyc/exec?cc=icem">
+  <p>Error Occured.</p>
+</iframe>
+<script>if(document.URL.split("?")[1]!=null){document.getElementById('myiframe').src = document.getElementById('myiframe').src+"?"+document.URL.split("?")[1];}</script>
+
+<div id="loadingMessage" align=center >
+  <img class='rotateimage'  src="https://sites.google.com/site/vmkale/AMELogo.jpg" alt='' align='center' style="float:center;width:150px;height:150px;border-radius:18px;border:0px solid #fff;" class=BackgroundPattern >
+  <BR><div ><i class="fa fa-spinner fa-spin" style="color:green;font-size:70px;"></i></div>
+  <BR>
+    <div style="font-family: Arial Black, Arial Bold, Gadget, sans-serif;">
+      <font style="font-size:20px;color:rgb(0,0,0);">Developed by<br></font>
+      <font style="font-size:24px;color:rgb(0,0,0);">
+        AME Online Solutions
+        <br>Email: info@</font><font style="font-size:24px;color:rgb(14,175,193);">ame</font><font style="font-size:24px;color:rgb(245,176,65);">online</font><font style="font-size:24px;color:rgb(51,72,103);">solutions.</font><font style="font-size:24px;color:rgb(0,0,255);">com</font><font style="font-size:20px;color:rgb(0,0,255);">
+        <br><font style="font-size:24px;color:rgb(0,0,0);"><i class="fa fa-android" style="color:green"></i> : https://apk.</font><font style="font-size:24px;color:rgb(14,175,193);">ame</font><font style="font-size:24px;color:rgb(245,176,65);">online</font><font style="font-size:24px;color:rgb(51,72,103);">solutions.</font><font style="font-size:24px;color:rgb(0,0,255);">com</font><font style="font-size:20px;color:rgb(0,0,255);">
+        <br>(Whatsapp- 9923663834)
+      </font>
+    </div>
+  </div>
+<script>
+  $("#loadingMessage").delay(7000).hide(0);
+</script>
+  <div class="footer">
+    <div style="font-family: Arial Black, Arial Bold, Gadget, sans-serif;">
+      <font style="font-size:16px;color:rgb(255,255,255);">
+        <table width="100%" style="background-color:#b47800;"><tr><td align="left">
+          <i class="fa fa-whatsapp"></i> +91 9923663834 /+91 7972202909
+          </td><td align="right">
+          <i class='fa fa-envelope'></i> Email: info@<font style="color:rgb(14,175,193);">ame</font><font style="color:rgb(245,176,65);">online</font><font style="color:rgb(51,72,103);">solutions.</font><font style="color:rgb(0,0,255);">com</font>
+        </td></tr></table>
+      </font>
+    </div>
+  </div>
+</body>
+</html>
