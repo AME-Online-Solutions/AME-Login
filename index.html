@@ -73,11 +73,16 @@
   background-color:#FEF5E7;
   background-size:5px 5px;
 }
-
-
 </style>
+<script>
+function setPage(){
+  var myiframe=document.getElementById("myiframe");
+  myiframe.scr=myiframe.src+window.location.search
+}
+</script>
+  
 </head>
-<body class=BackgroundPattern>
+<body class=BackgroundPattern onload="setPage();" >
 
 <iframe id=myiframe allowtransparency="true" width="100%" height="1000" seamless frameborder="0" scrolling="yes" padding="0" src="https://script.google.com/a/macros/ameonlinesolutions.com/s/AKfycbzVLMaAMTO7ujEI20E9uTJO4TkaPGCNrQA-a-qJQ6smdgMqqyc/exec">
   <p>Error Occured.</p>
