@@ -6,8 +6,6 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
 <link rel="icon" href="./favicon.ico" type="image/icon type">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   
 <style>
   .footer {
@@ -51,6 +49,11 @@
   display:block;
   -webkit-animation: rotation 7s infinite linear;
 }
+.spinme{
+  display:block;
+  -webkit-animation: spin 7s infinite linear;
+}
+
 @-webkit-keyframes rotation {
   from {
     -webkit-transform: rotateY(90deg);
@@ -93,28 +96,31 @@ function setPage(){
 
 <div id="loadingMessage" align=center >
   <img class='rotateimage'  src="./AMELogo.jpg" alt='' align='center' style="float:center;width:150px;height:150px;border-radius:18px;border:0px solid #fff;" class=BackgroundPattern >
-  <BR><div ><i class="fa fa-spinner fa-spin" style="color:green;font-size:70px;"></i></div>
+  <BR><div ><svg class=spinme version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="122.315px" height="122.88px" style="width=70px;height:70px;" viewBox="0 0 122.315 122.88" enable-background="new 0 0 122.315 122.88" xml:space="preserve"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M94.754,14.534c8.844,0,16.014,7.17,16.014,16.012 c0,8.844-7.17,16.015-16.014,16.015c-8.843,0-16.013-7.17-16.013-16.015C78.741,21.704,85.911,14.534,94.754,14.534L94.754,14.534z M109.265,52.121c-7.205,0-13.049,5.844-13.049,13.048c0,7.207,5.844,13.049,13.049,13.051c7.207,0,13.051-5.844,13.051-13.051 C122.315,57.965,116.472,52.121,109.265,52.121L109.265,52.121z M94.135,89.903c-5.032,0-9.114,4.082-9.114,9.113 c0,5.032,4.082,9.114,9.114,9.114c5.031,0,9.113-4.082,9.113-9.114C103.248,93.985,99.166,89.903,94.135,89.903L94.135,89.903z M59.275,104.65c-5.032,0-9.114,4.081-9.114,9.113c0,5.034,4.082,9.116,9.114,9.116s9.113-4.082,9.113-9.116 C68.389,108.731,64.308,104.65,59.275,104.65L59.275,104.65z M23.652,90.86c-4.717,0-8.54,3.823-8.54,8.54 c0,4.715,3.823,8.54,8.54,8.54c4.714,0,8.538-3.825,8.538-8.54C32.19,94.684,28.366,90.86,23.652,90.86L23.652,90.86z M9.096,54.872C4.072,54.872,0,58.944,0,63.968c0,5.021,4.072,9.093,9.096,9.093c5.021,0,9.093-4.072,9.093-9.093 C18.189,58.944,14.116,54.872,9.096,54.872L9.096,54.872z M23.652,17.026c-6.354,0-11.508,5.155-11.508,11.509 s5.154,11.506,11.508,11.506s11.506-5.152,11.506-11.506S30.006,17.026,23.652,17.026L23.652,17.026z M59.341,0 c-7.651,0-13.858,6.205-13.858,13.855c0,7.651,6.207,13.856,13.858,13.856s13.856-6.205,13.856-13.856 C73.197,6.205,66.992,0,59.341,0L59.341,0z"></path></g></svg></div>
   <BR>
     <div style="font-family: Arial Black, Arial Bold, Gadget, sans-serif;">
       <font style="font-size:20px;color:rgb(0,0,0);">Developed by<br></font>
       <font style="font-size:24px;color:rgb(0,0,0);">
         AME Online Solutions
         <br>Email: info@</font><font style="font-size:24px;color:rgb(14,175,193);">ame</font><font style="font-size:24px;color:rgb(245,176,65);">online</font><font style="font-size:24px;color:rgb(51,72,103);">solutions.</font><font style="font-size:24px;color:rgb(0,0,255);">com</font><font style="font-size:20px;color:rgb(0,0,255);">
-        <br><font style="font-size:24px;color:rgb(0,0,0);"><i class="fa fa-android" style="color:green"></i> : https://apk.</font><font style="font-size:24px;color:rgb(14,175,193);">ame</font><font style="font-size:24px;color:rgb(245,176,65);">online</font><font style="font-size:24px;color:rgb(51,72,103);">solutions.</font><font style="font-size:24px;color:rgb(0,0,255);">com</font><font style="font-size:20px;color:rgb(0,0,255);">
+        <br><font style="font-size:24px;color:rgb(0,0,0);"><svg xmlns="http://www.w3.org/2000/svg" style="width:24px;height:24px;display:inline-block;" viewBox="0 0 333333 333333" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M291659 125007c-11454 0-20834 9376-20834 20834v83323c0 11454 9381 20836 20834 20836 11455 0 20828-9381 20828-20836v-83321c0-11460-9376-20834-20828-20834v-2zm-31835-20834c-3161-28604-19204-53309-42186-68244l10421-20848c2559-5155 480-11391-4669-13976-5150-2582-11393-478-13976 4669l-10458 20909-2707-1083c-9517-3161-19498-4776-29533-4776h-98c-10035 0-20015 1614-29537 4772l-2707 1083-10458-20909c-2559-5150-8832-7228-13976-4669-5136 2559-7228 8835-4669 13976l10421 20848c-22976 14911-39024 39639-42186 68244v10421l186903 2v-10419h-585zM135418 83351c-5746 0-10415-4669-10415-10421 0-5746 4644-10389 10389-10415h49c5746 26 10389 4669 10389 10415 0 5752-4669 10421-10415 10421h2zm62498 0c-5746 0-10415-4669-10415-10421 0-5746 4643-10389 10389-10415h63c5752 26 10395 4669 10395 10415 0 5752-4669 10421-10415 10421h-18zM41674 125007c-11455 0-20828 9376-20828 20834v83323c0 11454 9376 20836 20828 20836 11454 0 20836-9381 20836-20836v-83321c0-11460-9381-20834-20836-20834v-2zm31249 114572c0 17256 14002 31249 31251 31249v41670c0 11454 9382 20834 20834 20834 11454 0 20834-9381 20834-20834v-41670h41659v41670c0 11454 9376 20834 20828 20834 11460 0 20836-9381 20836-20834v-41670c17248 0 31249-13994 31249-31249V125007H72923v114572z" fill="#a4c639"></path></svg> : https://apk.</font><font style="font-size:24px;color:rgb(14,175,193);">ame</font><font style="font-size:24px;color:rgb(245,176,65);">online</font><font style="font-size:24px;color:rgb(51,72,103);">solutions.</font><font style="font-size:24px;color:rgb(0,0,255);">com</font><font style="font-size:20px;color:rgb(0,0,255);">
         <br>(Whatsapp- 9923663834)
       </font>
     </div>
   </div>
 <script>
-  $("#loadingMessage").delay(7000).hide(0);
+  //$("#loadingMessage").delay(7000).hide(0);
+//         function timeFunction() {
+            setTimeout(function(){ document.getElementById("loadingMessage").hidden = true ; }, 7000);
+ //       }
 </script>
   <div class="footer">
     <div style="font-family: Arial Black, Arial Bold, Gadget, sans-serif;">
       <font style="font-size:16px;color:rgb(255,255,255);">
         <table width="100%" style="background-color:#b47800;"><tr><td align="left">
-          <i class="fa fa-whatsapp"></i> +91 9923663834 /+91 7972202909
+          <svg xmlns="http://www.w3.org/2000/svg" style="width:16px;height:16px;display:inline-block;" viewBox="0 0 333333 333333" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><rect width="100%" height="100%" fill="white"/><defs><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="333747" y1="-416.535" x2="-416.142" y2="333746"><stop offset="0" stop-color="#5dd069"></stop><stop offset="1" stop-color="#2bb641"></stop></linearGradient></defs><path d="M284741 47856C253398 16447 211710-827 167306-827 75837-829 1390 73626 1390 165162c0 29238 7659 57839 22171 82967L0 334163l88000-23094c24268 13220 51569 20226 79282 20226h67c91475 0 165985-74453 165985-165985 0-44366-17274-86032-48617-117430l24-24zM167355 303286c-24791 0-49073-6681-70258-19248l-5051-3014-52220 13676 13945-50900-3266-5228c-13884-21925-21130-47302-21130-73402 0-76085 61892-138000 138056-138000 36829 0 71526 14402 97554 40427 26040 26108 40361 60723 40361 97615-61 76140-61953 138056-138001 138056l12 20zm75634-103367c-4122-2098-24539-12101-28329-13485-3789-1384-6551-2098-9362 2096-2744 4122-10723 13485-13152 16284-2431 2750-4835 3144-8957 1045-4122-2098-17539-6472-33366-20609-12309-10986-20657-24594-23087-28717-2429-4122-272-6409 1841-8433 1907-1846 4128-4835 6219-7266 2098-2429 2750-4128 4128-6933 1384-2750 709-5181-333-7266-1045-2091-9362-22508-12752-30825-3329-8126-6803-6994-9356-7136-2430-124-5180-124-7918-124s-7266 1039-11055 5173c-3789 4122-14530 14199-14530 34611 0 20417 14850 40108 16935 42921 2096 2744 29252 44680 70849 62624 9886 4250 17606 6803 23622 8778 9947 3138 18971 2683 26109 1630 7978-1175 24539-10016 28014-19703 3470-9695 3470-17988 2431-19703-984-1846-3728-2866-7917-4990l-31 26h-2z" fill="url(#a)"></path></svg> +91 9923663834 /+91 7972202909
           </td><td align="right">
-          <i class='fa fa-envelope'></i> Email: info@<font style="color:rgb(14,175,193);">ame</font><font style="color:rgb(245,176,65);">online</font><font style="color:rgb(51,72,103);">solutions.</font><font style="color:rgb(0,0,255);">com</font>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="122.879px" height="88.855px" style="width:16px;height:16px;display:inline-block;" viewBox="0 0 122.879 88.855" enable-background="new 0 0 122.879 88.855" xml:space="preserve"><rect width="100%" height="100%" fill="white"/><g><path d="M7.048,0h108.784c1.939,0,3.701,0.794,4.977,2.069c1.277,1.277,2.07,3.042,2.07,4.979v74.759 c0,1.461-0.451,2.822-1.221,3.951c-0.141,0.365-0.361,0.705-0.662,0.994c-0.201,0.189-0.422,0.344-0.656,0.461 c-1.225,1.021-2.799,1.643-4.508,1.643H7.048c-1.937,0-3.701-0.793-4.979-2.07C0.794,85.51,0,83.748,0,81.807V7.048 c0-1.941,0.792-3.704,2.068-4.979C3.344,0.792,5.107,0,7.048,0L7.048,0z M5.406,78.842l38.124-38.22L5.406,9.538V78.842 L5.406,78.842z M47.729,44.045L8.424,83.449h105.701L76.563,44.051L64.18,54.602l0,0c-0.971,0.83-2.425,0.877-3.453,0.043 L47.729,44.045L47.729,44.045z M80.674,40.549l36.799,38.598V9.198L80.674,40.549L80.674,40.549z M8.867,5.406l53.521,43.639 l51.223-43.639H8.867L8.867,5.406z"></path></g></svg> Email: info@<font style="color:rgb(14,175,193);">ame</font><font style="color:rgb(245,176,65);">online</font><font style="color:rgb(51,72,103);">solutions.</font><font style="color:rgb(0,0,255);">com</font>
         </td></tr></table>
       </font>
     </div>
