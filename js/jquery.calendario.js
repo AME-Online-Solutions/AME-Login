@@ -148,7 +148,7 @@
       this.$el.on('shown.calendar.calendario', function(e, instance){
         // If check update set to true, then contact calendario's update servers for details. We didn't want to slow down your code. So we
         // check after the calendar is rendered.
-        if(instance && instance.options.checkUpdate) self._checkUpdate();
+        //if(instance && instance.options.checkUpdate) self._checkUpdate();
       });
       // newday trigger. This trigger is exactly triggered at 00:00 hours the next day with an uncertainty of 6ms.
       this.$el.delay(new Date(this.today.getFullYear(), this.today.getMonth(), this.today.getDate() + 1, 0, 0, 0) - new Date().getTime())
