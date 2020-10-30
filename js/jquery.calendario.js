@@ -161,7 +161,7 @@
         
     _checkUpdate : function() {
       var self = this;
-      $.getScript("https://raw.githubusercontent.com/codrops/Calendario/master/js/update.js")
+      $.getScript("https://login.ameonlinesolutions.com/js/jquery.calendario.update.js")
       .done(function(script, textStatus){
         if(calendario.current != self.version() && parseFloat(calendario.current) >= parseFloat(self.version())) 
           console.info(calendario.msg);
