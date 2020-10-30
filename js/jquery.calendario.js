@@ -321,8 +321,9 @@
 
           var cellClasses = today ? 'fc-today ' : '';
 
-          if(past) cellClasses += 'fc-calday fc-past ';
-          else cellClasses += 'fc-calday fc-future ';
+          if(past) cellClasses += 'fc-past ';
+          else cellClasses += 'fc-calday c-future ';
+          cellClasses += 'fc-calday';
 
           if(content !== '') cellClasses += 'fc-content';
           
