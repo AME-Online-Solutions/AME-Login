@@ -42,12 +42,12 @@
     monthabbrs : ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
     displayWeekAbbr : false, // choose between values in options.weeks or options.weekabbrs
     displayMonthAbbr : false, // choose between values in options.months or options.monthabbrs
-    startIn : 1, // left most day in the calendar (0 - Sunday, 1 - Monday, ... , 6 - Saturday)
+    startIn : 0, // left most day in the calendar (0 - Sunday, 1 - Monday, ... , 6 - Saturday)
     events: 'click',
     fillEmpty: true,
     feedParser: './feed/',
-    zone: '00:00', // Ex: IST zone time is '+05:30' by default it is GMT, Sign is important.
-    checkUpdate: true //Check if any new version of Calendario is released (Details will be in the browser console)
+    zone: '+05:30', // Ex: IST zone time is '+05:30' by default it is GMT, Sign is important.
+    checkUpdate: false //Check if any new version of Calendario is released (Details will be in the browser console)
   };
 
   $.Calendario.prototype = {
