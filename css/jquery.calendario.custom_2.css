@@ -14,22 +14,10 @@
 .custom-inner:before,
 .custom-inner:after  {
 	content: '';
-	width: 99%;
-	height: 50%;
 	position: absolute;
 	background: #f6f6f6;
-	bottom: -4px;
-	left: 0.5%;
 	z-index: -1;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-}
-
-.custom-inner:after {
-	content: '';
-	width: 98%;
-	bottom: -7px;
-	left: 1%;
-	z-index: -2;
 }
 
 .custom-header {
