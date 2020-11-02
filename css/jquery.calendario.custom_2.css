@@ -72,14 +72,6 @@
 	user-select: none;
 }
 
-.custom-header nav span:first-child {
-	left: 5px;
-}
-
-.custom-header nav span:last-child {
-	right: 5px;
-}
-
 .custom-header nav span:before {
 	font-family: 'fontawesome-selected';
 	color: #b37400;
