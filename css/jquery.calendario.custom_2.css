@@ -56,7 +56,7 @@
 
 .custom-header nav span {
 	position: absolute;
-	top: 17px;
+	top: 8px;
 	width: 30px;
 	height: 30px;
 	color: transparent;
@@ -71,6 +71,14 @@
 	-ms-user-select: none;
 	user-select: none;
 }
+.custom-header nav span:first-child {
+	left: 129px;
+}
+
+.custom-header nav span:last-child {
+	left: 200px;
+}
+
 
 .custom-header nav span:before {
 	font-family: 'fontawesome-selected';
