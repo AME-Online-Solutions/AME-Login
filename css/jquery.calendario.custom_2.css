@@ -11,7 +11,13 @@
 	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 
-.custom-inner:before,
+.custom-inner:before  {
+	content: '';
+	position: absolute;
+	background: #f6f6f6;
+	z-index: -1;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
 .custom-inner:after  {
 	content: '';
 	position: absolute;
