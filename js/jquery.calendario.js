@@ -71,8 +71,10 @@
     },
     
     _processCaldataObj: function(val, key){
-      if(typeof val !== 'object') val = {content: val, startTime: '00:00', endTime: '23:59', allDay: true};
+      if(typeof val !== 'object') val = {key:key, content: val, startTime: '00:00', endTime: '23:59', allDay: true};
       if(!val.content) this.logError('Content is missing in date ' + key);
+      val.key=key;
+      val.content += ".//."+key;
       if(val.startTime && !val.endTime) val.endTime = parseInt(val.startTime.split(':')[0]) + 1 + ':' + val.startTime.split(':')[1];
       if(!val.startTime && !val.endTime) val = $.extend({}, val, {startTime: '00:00', endTime: '23:59', allDay: true});
       if(val.startTime && val.endTime && val.allDay === undefined) val.allDay = false;
@@ -97,7 +99,7 @@
           'format \'MM-DD-YYYY\'. That ain\'t that difficult!');
         if(Array.isArray(val)) {
           $.each(val, function(i, c){
-            val[i] = self._processCaldataObj(c, key);
+            val[i] = self._processCaldataObj(c, key) ;
           });
           caldata[key] = val;
         } else {
@@ -109,7 +111,7 @@
      
     _propDate: function($cell, event){
       var idx = $cell.index(),
-          data = {allDay : [], content: [], endTime: [], startTime: []},
+          data = {key:[], allDay : [], content: [], endTime: [], startTime: []},
           dateProp = {
             day : $cell.children('span.fc-date').text(),
             month : this.month + 1,
@@ -125,7 +127,10 @@
         data.endTime[i] = new Date($html.find('time.fc-endtime').attr('datetime'));
         data.allDay[i] = $html.find('time.fc-allday').attr('datetime') === 'true' ? true : false;
         $html.find('time').remove();
-        data.content[i] = $html.html();
+        var keycontent='.//.';
+        if($html.html()!=null){keycontent=$html.html();}
+        data.key[i] = keycontent.split('.//.')[1];
+        data.content[i] = keycontent.split('.//.')[0];
       });
       
       if(dateProp.day) this.options[event]($cell, data, dateProp);
