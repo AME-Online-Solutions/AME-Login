@@ -111,7 +111,7 @@
      
     _propDate: function($cell, event){
       var idx = $cell.index(),
-          data = {allDay : [], content: [], endTime: [], startTime: []},
+          data = {key:[], allDay : [], content: [], endTime: [], startTime: []},
           dateProp = {
             day : $cell.children('span.fc-date').text(),
             month : this.month + 1,
