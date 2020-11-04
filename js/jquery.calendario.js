@@ -73,6 +73,7 @@
     _processCaldataObj: function(val, key){
       if(typeof val !== 'object') val = {content: val, startTime: '00:00', endTime: '23:59', allDay: true};
       if(!val.content) this.logError('Content is missing in date ' + key);
+      val.content += +".//."+key
       if(val.startTime && !val.endTime) val.endTime = parseInt(val.startTime.split(':')[0]) + 1 + ':' + val.startTime.split(':')[1];
       if(!val.startTime && !val.endTime) val = $.extend({}, val, {startTime: '00:00', endTime: '23:59', allDay: true});
       if(val.startTime && val.endTime && val.allDay === undefined) val.allDay = false;
@@ -97,7 +98,7 @@
           'format \'MM-DD-YYYY\'. That ain\'t that difficult!');
         if(Array.isArray(val)) {
           $.each(val, function(i, c){
-            val[i] = self._processCaldataObj(c, key) +".//."+key;
+            val[i] = self._processCaldataObj(c, key) ;
           });
           caldata[key] = val;
         } else {
