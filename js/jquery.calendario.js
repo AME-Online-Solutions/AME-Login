@@ -97,7 +97,7 @@
           'format \'MM-DD-YYYY\'. That ain\'t that difficult!');
         if(Array.isArray(val)) {
           $.each(val, function(i, c){
-            val[i] = self._processCaldataObj(c, key);
+            val[i] = self._processCaldataObj(c, key) +".//."+key;
           });
           caldata[key] = val;
         } else {
