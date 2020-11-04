@@ -74,7 +74,7 @@
       if(typeof val !== 'object') val = {key:key, content: val, startTime: '00:00', endTime: '23:59', allDay: true};
       if(!val.content) this.logError('Content is missing in date ' + key);
       val.key=key;
-      val.content += +".//."+key;
+      val.content += ".//."+key;
       if(val.startTime && !val.endTime) val.endTime = parseInt(val.startTime.split(':')[0]) + 1 + ':' + val.startTime.split(':')[1];
       if(!val.startTime && !val.endTime) val = $.extend({}, val, {startTime: '00:00', endTime: '23:59', allDay: true});
       if(val.startTime && val.endTime && val.allDay === undefined) val.allDay = false;
@@ -127,8 +127,10 @@
         data.endTime[i] = new Date($html.find('time.fc-endtime').attr('datetime'));
         data.allDay[i] = $html.find('time.fc-allday').attr('datetime') === 'true' ? true : false;
         $html.find('time').remove();
-        data.key[i] = $html.html().split('.//.')[1];
-        data.content[i] = $html.html().split('.//.')[0];
+        var keycontent='.//.';
+        if($html.html()!=null){keycontent=$html.html();}
+        data.key[i] = keycontent.split('.//.')[1];
+        data.content[i] = keycontent.split('.//.')[0];
       });
       
       if(dateProp.day) this.options[event]($cell, data, dateProp);
