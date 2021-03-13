@@ -7,9 +7,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="640"
-   height="640"
-   viewBox="0 0 169.33333 169.33334"
+   width="467.8"
+   viewBox="22.780625 0 123.772083333333 169.33334"
    version="1.1"
    id="svg1084"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
@@ -161,4 +160,22 @@
        id="path985"
        sodipodi:nodetypes="cscsc" />
   </g>
+  <script type="text/javascript">
+    //<![CDATA[
+      var url_parameters=new URL(window.location.toString()).searchParams;
+      if(url_parameters.get('opacity'))
+      {
+        document.getElementsByTagName("svg")[0].style.opacity=url_parameters.get('opacity');
+      }
+      if(url_parameters.get('background-color'))
+      {
+        document.getElementsByTagName("svg")[0].style.backgroundColor=url_parameters.get('background-color').replace("hash","#");
+      }
+      if(url_parameters.get('width'))
+      {
+        document.getElementsByTagName("svg")[0].setAttribute("width",url_parameters.get('width'));
+      }
+    //]]>
+  </script>
+
 </svg>
