@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AME Login</title>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
+<link rel="icon" href="https://login.ameonlinesolutions.com/favicon.ico" type="image/icon type">
+  
+<style>
+  .footer {
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     color: white;
+  }
+
+  body {
+    /*background-color:#FEF5E7;*/
+    margin:0px;
+    padding:0px;
+    height:100vh;
+    overflow:hidden;
+  }
+#loadingMessage {
+  width: 100%;
+  height:100vh;
+  background: #FEF5E7;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  background:
+  radial-gradient(white 15%, transparent 16%) 0 0,
+  radial-gradient(#b47800 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#FEF5E7;
+  background-size:5px 5px;
+  }
+  .full-height { height: 100%;}
+ 
+// **************************  spin image   *************************
+.spinimage {
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+.rotateimage{
+  display:block;
+  -webkit-animation: rotation 7s infinite linear;
+}
+.spinme{
+  display:block;
+  -webkit-animation: spin 7s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    transform: rotateY(90deg);	
+  }
+  to {
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);	
+  }
+}
+.BackgroundPattern{
+  color:black;
+  background:
+  radial-gradient(white 15%, transparent 16%) 0 0,
+  radial-gradient(#b47800 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#FEF5E7;
+  background-size:5px 5px;
+}
+  iframe {
+    display: block;
+    border: none;
+    height: 100vh; 
+    width: 100vw;
+    /*background-color:#FEF5E7;*/
+}
+
+</style>
+<script>
+function setPage(){
+  var myiframe=document.getElementById("myiframe");
+  myiframe.scr=myiframe.src+window.location.search
+}
+</script>
+  
+</head>
+<body onload="setPage();" >
+
+<iframe id=myiframe allow="camera;microphone;" allowtransparency="true" seamless frameborder="0" padding="0" src="https://script.google.com/macros/s/AKfycbz0zCvLjadF41UGvvTe-2dL_RGDSl2L563apO2j9w/exec">
+  <p>Error Occured.</p>
+</iframe>
+<script>if(document.URL.split("?")[1]!=null){document.getElementById('myiframe').src = document.getElementById('myiframe').src+"?"+document.URL.split("?")[1];}</script>
+</body>
+</html>
