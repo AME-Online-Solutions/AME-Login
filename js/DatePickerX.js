@@ -3,7 +3,7 @@
     'use strict';
 
     var optionsDefault = {
-        mondayFirst      : true,
+        mondayFirst      : false,
         format           : 'yyyy-mm-dd.',
         minDate          : new Date(0, 0),
         maxDate          : new Date(9999, 11, 31),
