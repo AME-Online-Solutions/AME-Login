@@ -105,19 +105,9 @@
 </style>
 <script>
 function setPage(form){
-  alert(JSON.stringify(form));
-  document.getElementById("frame").innerHTML="";
-  //var myiframe=document.getElementById("myiframe");
-  //myiframe.scr=myiframe.src+window.location.search
   let myiframeloc="https://script.google.com/a/macros/ameonlinesolutions.com/s/AKfycbyiXxgWuJ2u7H39AUj-4oT1ee8mQnYe4Fo8VF017WFyT0Lh5SG2vbaijixPOldMjFinSA/exec"+"?id="+form.id+"&pass="+form.pass
-  alert(myiframeloc);
-  
   let frametxt='<iframe id=myiframe allow="camera;microphone;" allowtransparency="true" seamless frameborder="0" padding="0" src="'+myiframeloc+'"><p>Error Occured.</p></iframe>';
   document.getElementById("frame").innerHTML=frametxt;
-  
-  //document.getElementById('myiframe').src = document.getElementById('myiframe').src+"?id="+document.getElementById("lid").value+"&pass="+document.getElementById("pwd").value
-  //alert(myiframe.scr);  //alert("https://script.google.com/a/macros/ameonlinesolutions.com/s/AKfycbyiXxgWuJ2u7H39AUj-4oT1ee8mQnYe4Fo8VF017WFyT0Lh5SG2vbaijixPOldMjFinSA/exec?id="+document.getElementById("lid").value+"&pass="+document.getElementById("pwd").value+"");
-  
 }
 </script>
 
