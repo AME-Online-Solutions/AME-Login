@@ -98,11 +98,23 @@ function setPage(){
 </script>
   
 </head>
-<body onload="setPage();" >
-
-<iframe id=myiframe allow="camera;microphone;" allowtransparency="true" seamless frameborder="0" padding="0" src="https://script.google.com/macros/s/AKfycbz0zCvLjadF41UGvvTe-2dL_RGDSl2L563apO2j9w/exec">
-  <p>Error Occured.</p>
-</iframe>
-<script>if(document.URL.split("?")[1]!=null){document.getElementById('myiframe').src = document.getElementById('myiframe').src+"?"+document.URL.split("?")[1];}</script>
+<body>
+<div align=center>
+    <br>
+    <form id=Form name=LoginForm autocomplete=on onsubmit="event.preventDefault();alert(JSON.stringify(this);">
+        <div hidden>
+            <input type=hidden name="formname" value=CheckLogin>
+        </div>
+        <div class=outset style="background-color:#f7f7f7;width: 320px;box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);padding:20px;margin: auto;">
+            <div align=center><img style="width:60px; height:60px; border-radius:5px;" class="rotateimage" id=lcl src="https://login.ameonlinesolutions.com/images/AMELogo.png" /> </div>
+            <div align=center>
+                <div align=center style="margin:20px;">Login with <b>'+lcn.split(" ")[0]+'</b> Credentials</div>
+                <input type="text" id="lid" name="lid" placeholder="&#128104; Enter User ID" class=inset style="padding: 3px;width: 90%;height: 26px;font-size: 14px;margin: 15px 10px 15px 10px;"
+                />
+                <input type="password" autocomplete=on name="pwd" placeholder="&#128273; Enter your password" class=inset style="padding: 3px;width: 90%;height: 26px;font-size: 14px;margin: 15px 10px 15px 10px;" />
+                <input type="submit" value="&#120183;&nbsp; Login" style="margin-bottom:30px;align:center;background-color:var(--c3);padding: 3px;width: 90%;height: 40px;font-size: 18px;margin: 15px 10px 15px 10px;color:white;cursor:pointer;" /> </div>
+        </div>
+    </form>
+</div>
 </body>
 </html>
