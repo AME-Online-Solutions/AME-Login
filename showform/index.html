@@ -108,6 +108,7 @@ function setPage(form){
   document.getElementById("loginform").innerHTML="";
   var myiframe=document.getElementById("myiframe");
   myiframe.scr=myiframe.src+window.location.search
+  document.getElementById('myiframe').src = document.getElementById('myiframe').src+"?id="+document.getElementById("lid").value+"&pass="+document.getElementById("pwd").value
   alert(myiframe.scr);  //alert("https://script.google.com/a/macros/ameonlinesolutions.com/s/AKfycbyiXxgWuJ2u7H39AUj-4oT1ee8mQnYe4Fo8VF017WFyT0Lh5SG2vbaijixPOldMjFinSA/exec?id="+document.getElementById("lid").value+"&pass="+document.getElementById("pwd").value+"");
   alert(JSON.stringify(form));
 }
