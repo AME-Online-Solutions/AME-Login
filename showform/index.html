@@ -6,8 +6,16 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
 <link rel="icon" href="https://login.ameonlinesolutions.com/favicon.ico" type="image/icon type">
+<script src="https://login.ameonlinesolutions.com/js/jquery.js"></script>
   
 <style>
+  :root {
+    /* colors */
+    --c1: #FEF5E7;
+    --c2: #b37400;
+    --c3: #148c9f;
+  }
+
   .footer {
      left: 0;
      bottom: 0;
@@ -95,18 +103,12 @@
 }
 
 </style>
-<script>
-function setPage(){
-  var myiframe=document.getElementById("myiframe");
-  myiframe.scr=myiframe.src+window.location.search
-}
-</script>
-  
+
 </head>
 <body>
 <div align=center>
     <br>
-    <form id=Form name=LoginForm autocomplete=on onsubmit="event.preventDefault();alert(JSON.stringify(this);">
+    <form id=Form name=LoginForm autocomplete=on onsubmit='event.preventDefault();alert("https://script.google.com/a/macros/ameonlinesolutions.com/s/AKfycbyiXxgWuJ2u7H39AUj-4oT1ee8mQnYe4Fo8VF017WFyT0Lh5SG2vbaijixPOldMjFinSA/exec?id="+document.getElementById("lid").value+"&pass="+document.getElementById("pwd").value+"");'>
         <div hidden>
             <input type=hidden name="formname" value=CheckLogin>
         </div>
@@ -116,7 +118,7 @@ function setPage(){
                 <div align=center style="margin:20px;">Login with <b>AME Online Solutions</b> Credentials</div>
                 <input type="text" id="lid" name="lid" placeholder="&#128104; Enter User ID" class=inset style="padding: 3px;width: 90%;height: 26px;font-size: 14px;margin: 15px 10px 15px 10px;"
                 />
-                <input type="password" autocomplete=on name="pwd" placeholder="&#128273; Enter your password" class=inset style="padding: 3px;width: 90%;height: 26px;font-size: 14px;margin: 15px 10px 15px 10px;" />
+                <input type="password" autocomplete=on id="pwd" name="pwd" placeholder="&#128273; Enter your password" class=inset style="padding: 3px;width: 90%;height: 26px;font-size: 14px;margin: 15px 10px 15px 10px;" />
                 <input type="submit" value="&#120183;&nbsp; Login" style="margin-bottom:30px;align:center;background-color:var(--c3);padding: 3px;width: 90%;height: 40px;font-size: 18px;margin: 15px 10px 15px 10px;color:white;cursor:pointer;" /> </div>
         </div>
     </form>
