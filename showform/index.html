@@ -105,7 +105,7 @@
 <script>
 function setPage(form){
   document.getElementById("rimage").hidden = false ;
-  setTimeout(function(){document.getElementById("rimage").hidden = true;}, 10000);  
+  setTimeout(function(){document.getElementById("rimage").hidden = true;document.getElementById("rimage").innerHTML="";}, 10000);  
   let myiframeloc="https://script.google.com/a/macros/ameonlinesolutions.com/s/AKfycbyiXxgWuJ2u7H39AUj-4oT1ee8mQnYe4Fo8VF017WFyT0Lh5SG2vbaijixPOldMjFinSA/exec"+"?id="+form.id+"&pass="+form.pass
   let frametxt='<iframe id=myiframe allow="camera;microphone;" allowtransparency="true" seamless frameborder="0" padding="0" src="'+myiframeloc+'"><p>Error Occured.</p></iframe>';
   document.getElementById("frame").innerHTML=frametxt;
