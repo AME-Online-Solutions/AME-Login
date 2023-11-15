@@ -104,6 +104,8 @@
 </style>
 <script>
 function setPage(form){
+  document.getElementById("rimage").hidden = false ;
+  setTimeout(function(){document.getElementById("rimage").hidden = true;}, 10000);  
   let myiframeloc="https://script.google.com/a/macros/ameonlinesolutions.com/s/AKfycbyiXxgWuJ2u7H39AUj-4oT1ee8mQnYe4Fo8VF017WFyT0Lh5SG2vbaijixPOldMjFinSA/exec"+"?id="+form.id+"&pass="+form.pass
   let frametxt='<iframe id=myiframe allow="camera;microphone;" allowtransparency="true" seamless frameborder="0" padding="0" src="'+myiframeloc+'"><p>Error Occured.</p></iframe>';
   document.getElementById("frame").innerHTML=frametxt;
@@ -112,7 +114,7 @@ function setPage(form){
 
 </head>
 <body>
-
+<div id="rimage" hidden><div style="position: absolute;top: 50%;left: 50%;transform: translateX(-50%) translateY(-50%);"><img class="rotateimage"  src="https://login.ameonlinesolutions.com/images/AMELogo.png" alt="" style="width:100px;height:100px;border-radius:18px;border:0px solid #fff;" ></div></div>
 <div id=frame align=center>
     <br>
     <form id=Form name=LoginForm autocomplete=on onsubmit='event.preventDefault();setPage({id:document.getElementById("lid").value,pass:document.getElementById("pwd").value});'>
